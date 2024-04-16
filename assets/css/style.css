@@ -1,16 +1,31 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px;
+    color: #f6f6f6;
 }
 
+h2{
+    font-size: 2rem;
+}
 
-html{
+p{
+    font-size: 1.5rem;
+}
+
+html {
     font-size: 62.5%;
-    padding: 2rem;
+    padding: 0;
 }
 
 .menu {
@@ -20,33 +35,30 @@ html{
     right: 0;
     width: 100%;
     height: 40vh;
-    background-image: url(/MeLevaAli-master/assets/img/export.jpeg);
+    background-image: url(/assets/img/export.jpeg);
     background-position: center; 
     background-size: cover; 
-    color: #ffff ;
-    
+    color: #ffff;
 }
 
-
-img{
+img {
     border-radius: 10%;
     height: 65px;
     width: 85px;
 }
 
-
-.menu a{
+.menu a {
     color: inherit;
     text-decoration: none;
     font-weight: bold;
-
 }
 
 .menu ul {
     list-style: none;
     display: flex;
 }
-.menu ul li a{
+
+.menu ul li a {
     display: block;
     padding: 2rem;
     font-size: 2rem;
@@ -54,14 +66,16 @@ img{
     position: relative;
     font-style: none;
 }
-.menu-content{
+
+.menu-content {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.8rem;
     margin-top: 10px;
 }
-.menu ul li a::after{
+
+.menu ul li a::after {
     content:'' ;
     position: absolute;
     bottom: 1rem;
@@ -71,13 +85,13 @@ img{
     background: crimson;
     transition: all 300ms ease-in-out;
 }
-.menu ul li a:hover::after{
+
+.menu ul li a:hover::after {
     width: 50%;
     left: 25%;
 }
 
-.Premium{
-    
+.Premium {
     display: inline-block;
     background-color: #ff8200;
     color: #fff;
@@ -89,12 +103,37 @@ img{
     width: auto;
 }
 
-.Premium:hover{
+.Premium:hover {
     cursor: pointer;
     background-color: #dc7d17c1;
     transition: all 300ms ease-in-out;
 }
 
-#map{
+#map {
     height: 300px;
 }
+
+.card-pai {
+    display: flex;
+    gap: 24px;
+}
+
+.bg-color {
+ 
+    height: 100vh;
+    background: #ff8200;
+    padding: 20px 0;
+}
+
+.card-filho {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 24px;
+    border-radius: 20px;
+    padding: 40px 48px;
+    background: #f6f6f6;
+
+}
+
