@@ -35,7 +35,7 @@ html {
     right: 0;
     width: 100%;
     height: 40vh;
-    background-image: url(/assets/img/export.jpeg);
+    background-image: url('https://raw.githubusercontent.com/JoaoLucasPMedeiros/MeLevaAli-master/main/assets/img/export.jpeg');
     background-position: center; 
     background-size: cover; 
     color: #ffff;
