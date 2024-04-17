@@ -3,67 +3,473 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Me leva maps</title>
+    <title>Me leva ali</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
 </head>
-<body> 
-     <aside class="menu white-bg">
-        <div class="main-content menu-content"> -->
-            <nav>
-                <ul>
-                    <img src="assets/img/logo_me_leva.jpg" alt="me leva">
-                    <li><a href="#">Rotas</a></li>
-                    <li><a href="#">Opção De Transporte</a></li>
-                    <li><a href="#">Pontos Turísticos </a></li>
-                    <li><a href="#">Comunidade Me Leva</a></li>
-                    <li><a href="#">Ultimas Atualizações </a></li>
-                    <li><a href="#">Como Salvar Uma Rota </a></li>
-                </ul>
-            </nav> 
-            <div class="Premium">
-                <a>Seja Premium </a>
-            </div>
-        </div>
-    </aside>
+<body>
+    
+<nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
 
-
-    <div id="map">
-
+        <span class="logo-meLeva self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Me Leva</span>
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button type="button" class="btn-premium text-white bg-blue-700  font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Seja Premium</button>
+        <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
     </div>
+    <div class="menu items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+        <ul class="menu flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+              <a href="#" class="menu-a block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Rotas</a>
+            </li>
+          <li>
+            <a href="#" class="menu-a block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Opção De Transporte</a>
+          </li>
+          <li>
+            <a href="#" class="menu-a block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pontos Turísticos</a>
+          </li>
+          <li>
+            <a href="#" class="menu-a block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Comunidade Me Leva</a>
+          </li>
+          <li>
+            <a href="#" class="menu-a block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Ultimas Atualizações</a>
+          </li>
+          <li>
+            <a href="#" class="menu-a block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Salvar Uma Rota</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+<!-- CARD -->
 
-    <article class="seja-Premium bg-color">
-        <h1>Planos Premium</h1>
-        <div class="card-pai">
-            <div class="card-filho">
-                <div class="img-card">
-                    <img src="assets/img/premium.png" alt="">
-                    <h2>Premium - 1</h2>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-            <div class="card-filho">
-                <div class="img-card">
-                    <img src="assets/img/premium.png" alt="">
-                    <h2>Premium - 2</h2>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. .</p>
-            </div>
-            <div class="card-filho">
-                <div class="img-card">
-                    <img src="assets/img/premium.png" alt="">
-                    <h2>Premium - 3</h2>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-            <div class="card-filho">
-                <div class="img-card">
-                    <img src="assets/img/premium.png" alt="">
-                    <h2>Premium - 4</h2>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-        </div> 
-    </article>
+    <h1>Planos</h1>
+    <aside>
+
+  
+  <div class="card">
+    <div class="pricing-block-content">
+      <p class="pricing-plan">Premium - 1</p>
+      <div class="price-value" data-currency="R$ Real" data-currency-simple="USD">
+        <p class="price-number"><span class="price-integer">0</span></p>
+        <div id="priceDiscountCent">/mo</div>
+      </div>
+      <div class="pricing-note">free forever</div>
+      <ul class="check-list" role="list">
+        <li class="check-list-item">
+          <svg
+            version="1.0"
+            preserveAspectRatio="xMidYMid meet"
+            height="16"
+            viewBox="0 0 30 30.000001"
+            zoomAndPan="magnify"
+            width="16"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            style="color: rgb(102, 78, 255);"
+          
+            <defs>
+              <clipPath id="id1">
+                <path
+                  fill="#664eff"
+                  clip-rule="nonzero"
+                  d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                ></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#id1)">
+              <path
+                fill-rule="nonzero"
+                fill-opacity="1"
+                d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                fill="#664eff"
+              ></path>
+            </g></svg
+          >Lorem Ipsum
+        </li>
+        <li class="check-list-item">
+          <svg
+            version="1.0"
+            preserveAspectRatio="xMidYMid meet"
+            height="16"
+            viewBox="0 0 30 30.000001"
+            zoomAndPan="magnify"
+            width="16"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            style="color: rgb(102, 78, 255);"
+          >
+            <defs>
+              <clipPath id="id1">
+                <path
+                  fill="#664eff"
+                  clip-rule="nonzero"
+                  d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                ></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#id1)">
+              <path
+                fill-rule="nonzero"
+                fill-opacity="1"
+                d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                fill="#664eff"
+              ></path>
+            </g></svg
+          >Lorem Ipsum
+        </li>
+        <li class="check-list-item">
+          <svg
+            version="1.0"
+            preserveAspectRatio="xMidYMid meet"
+            height="16"
+            viewBox="0 0 30 30.000001"
+            zoomAndPan="magnify"
+            width="16"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            style="color: rgb(102, 78, 255);"
+          >
+            <defs>
+              <clipPath id="id1">
+                <path
+                  fill="#664eff"
+                  clip-rule="nonzero"
+                  d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                ></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#id1)">
+              <path
+                fill-rule="nonzero"
+                fill-opacity="1"
+                d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                fill="#664eff"
+              ></path>
+            </g></svg
+          >Lorem Ipsum
+        </li>
+        <li class="check-list-item">
+          <svg
+            version="1.0"
+            preserveAspectRatio="xMidYMid meet"
+            height="16"
+            viewBox="0 0 30 30.000001"
+            zoomAndPan="magnify"
+            width="16"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            style="color: rgb(102, 78, 255);"
+          >
+            <defs>
+              <clipPath id="id1">
+                <path
+                  fill="#664eff"
+                  clip-rule="nonzero"
+                  d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                ></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#id1)">
+              <path
+                fill-rule="nonzero"
+                fill-opacity="1"
+                d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                fill="#664eff"
+              ></path>
+            </g></svg
+          >Lorem Ipsum
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+    
+  <div class="card">
+    <div class="pricing-block-content">
+      <p class="pricing-plan">Premium - 1</p>
+      <div class="price-value" data-currency="R$ Real" data-currency-simple="USD">
+        <p class="price-number"><span class="price-integer">0</span></p>
+        <div id="priceDiscountCent">/mo</div>
+      </div>
+      <div class="pricing-note">free forever</div>
+      <ul class="check-list" role="list">
+        <li class="check-list-item">
+          <svg
+            version="1.0"
+            preserveAspectRatio="xMidYMid meet"
+            height="16"
+            viewBox="0 0 30 30.000001"
+            zoomAndPan="magnify"
+            width="16"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            style="color: rgb(102, 78, 255);"
+          
+            <defs>
+              <clipPath id="id1">
+                <path
+                  fill="#664eff"
+                  clip-rule="nonzero"
+                  d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                ></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#id1)">
+              <path
+                fill-rule="nonzero"
+                fill-opacity="1"
+                d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                fill="#664eff"
+              ></path>
+            </g></svg
+          >Lorem Ipsum
+        </li>
+        <li class="check-list-item">
+          <svg
+            version="1.0"
+            preserveAspectRatio="xMidYMid meet"
+            height="16"
+            viewBox="0 0 30 30.000001"
+            zoomAndPan="magnify"
+            width="16"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            style="color: rgb(102, 78, 255);"
+          >
+            <defs>
+              <clipPath id="id1">
+                <path
+                  fill="#664eff"
+                  clip-rule="nonzero"
+                  d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                ></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#id1)">
+              <path
+                fill-rule="nonzero"
+                fill-opacity="1"
+                d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                fill="#664eff"
+              ></path>
+            </g></svg
+          >Lorem Ipsum
+        </li>
+        <li class="check-list-item">
+          <svg
+            version="1.0"
+            preserveAspectRatio="xMidYMid meet"
+            height="16"
+            viewBox="0 0 30 30.000001"
+            zoomAndPan="magnify"
+            width="16"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            style="color: rgb(102, 78, 255);"
+          >
+            <defs>
+              <clipPath id="id1">
+                <path
+                  fill="#664eff"
+                  clip-rule="nonzero"
+                  d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                ></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#id1)">
+              <path
+                fill-rule="nonzero"
+                fill-opacity="1"
+                d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                fill="#664eff"
+              ></path>
+            </g></svg
+          >Lorem Ipsum
+        </li>
+        <li class="check-list-item">
+          <svg
+            version="1.0"
+            preserveAspectRatio="xMidYMid meet"
+            height="16"
+            viewBox="0 0 30 30.000001"
+            zoomAndPan="magnify"
+            width="16"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            style="color: rgb(102, 78, 255);"
+          >
+            <defs>
+              <clipPath id="id1">
+                <path
+                  fill="#664eff"
+                  clip-rule="nonzero"
+                  d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                ></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#id1)">
+              <path
+                fill-rule="nonzero"
+                fill-opacity="1"
+                d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                fill="#664eff"
+              ></path>
+            </g></svg
+          >Lorem Ipsum
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="pricing-block-content">
+      <p class="pricing-plan">Premium - 1</p>
+      <div class="price-value" data-currency="R$ Real" data-currency-simple="USD">
+        <p class="price-number"><span class="price-integer">0</span></p>
+        <div id="priceDiscountCent">/mo</div>
+      </div>
+      <div class="pricing-note">free forever</div>
+      <ul class="check-list" role="list">
+        <li class="check-list-item">
+          <svg
+            version="1.0"
+            preserveAspectRatio="xMidYMid meet"
+            height="16"
+            viewBox="0 0 30 30.000001"
+            zoomAndPan="magnify"
+            width="16"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            style="color: rgb(102, 78, 255);"
+          
+            <defs>
+              <clipPath id="id1">
+                <path
+                  fill="#664eff"
+                  clip-rule="nonzero"
+                  d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                ></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#id1)">
+              <path
+                fill-rule="nonzero"
+                fill-opacity="1"
+                d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                fill="#664eff"
+              ></path>
+            </g></svg
+          >Lorem Ipsum
+        </li>
+        <li class="check-list-item">
+          <svg
+            version="1.0"
+            preserveAspectRatio="xMidYMid meet"
+            height="16"
+            viewBox="0 0 30 30.000001"
+            zoomAndPan="magnify"
+            width="16"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            style="color: rgb(102, 78, 255);"
+          >
+            <defs>
+              <clipPath id="id1">
+                <path
+                  fill="#664eff"
+                  clip-rule="nonzero"
+                  d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                ></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#id1)">
+              <path
+                fill-rule="nonzero"
+                fill-opacity="1"
+                d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                fill="#664eff"
+              ></path>
+            </g></svg
+          >Lorem Ipsum
+        </li>
+        <li class="check-list-item">
+          <svg
+            version="1.0"
+            preserveAspectRatio="xMidYMid meet"
+            height="16"
+            viewBox="0 0 30 30.000001"
+            zoomAndPan="magnify"
+            width="16"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            style="color: rgb(102, 78, 255);"
+          >
+            <defs>
+              <clipPath id="id1">
+                <path
+                  fill="#664eff"
+                  clip-rule="nonzero"
+                  d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                ></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#id1)">
+              <path
+                fill-rule="nonzero"
+                fill-opacity="1"
+                d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                fill="#664eff"
+              ></path>
+            </g></svg
+          >Lorem Ipsum
+        </li>
+        <li class="check-list-item">
+          <svg
+            version="1.0"
+            preserveAspectRatio="xMidYMid meet"
+            height="16"
+            viewBox="0 0 30 30.000001"
+            zoomAndPan="magnify"
+            width="16"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            style="color: rgb(102, 78, 255);"
+          >
+            <defs>
+              <clipPath id="id1">
+                <path
+                  fill="#664eff"
+                  clip-rule="nonzero"
+                  d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                ></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#id1)">
+              <path
+                fill-rule="nonzero"
+                fill-opacity="1"
+                d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                fill="#664eff"
+              ></path>
+            </g></svg
+          >Lorem Ipsum
+        </li>
+      </ul>
+    </div>
+  </div>
+</aside>
+   
+  
 </body>
 </html>
